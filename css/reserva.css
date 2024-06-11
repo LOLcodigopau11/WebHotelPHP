@@ -1,0 +1,228 @@
+.fondo {
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+.hero {
+    color: #fff;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.busqueda {
+    width: 100%;
+    display: flex;
+    padding: 2.5rem 0;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    background: rgba(0, 114, 33, 0.5);
+    text-align: center;
+    align-items: center;
+    backdrop-filter: blur(3px); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+  
+.busqueda label {
+    color: var(--color_blanco);
+    margin: 15px;
+}
+  
+.busqueda input, .busqueda select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+  
+.busqueda button[type="submit"] {
+    background-color: #4CAF50;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.busqueda button[type="submit"]:hover {
+    background-color: #000;
+    color: #59DE98;
+}
+
+.resultados {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.resultado-item {
+    background-color: #000000d1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    width: 300px;
+    text-align: left;
+}
+
+.resultado-item img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.resultado-item p {
+    margin: 1rem 0;
+    color: #333;
+}
+
+.resultado-item .btn {
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.resultado-item .btn:hover {
+    background-color: #000;
+    color: #59DE98;
+}
+
+.hero .container {
+    max-width: 700px;
+    margin: 10% auto 6% auto;
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; border-radius: 2px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(10px); /* compatiblidad con el navegador safari*/ 
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    font-family: 'Philosopher', sans-serif;
+    margin-bottom: 1rem;
+    color: white; 
+    animation: fadeInDown 1s ease-out;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    margin: 1.5rem;
+    color: #ffffff;
+    animation: fadeInUp 1s ease-out;
+    font-weight: bolder;
+}
+
+.hero .button {
+    display: inline-block;
+    padding: 15px 20px;
+    background: #f4b41a;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero .button:hover {
+    background: #e39c08;
+}
+
+.pago {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.pago h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pago p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.pago label {
+    display: block;
+    font-size: 1.1rem;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.pago select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.pago .btn {
+    background-color: #4CAF50;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pago .btn:hover {
+    background-color: #45a049;
+}
+
+.alert-success {
+    padding: 1rem;
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.alert-danger {
+    padding: 1rem;
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+
+.fondop {
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}

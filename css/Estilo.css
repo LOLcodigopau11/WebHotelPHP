@@ -1,0 +1,477 @@
+:root {
+    --color_primario: #07221D;
+    --color2: #003817;
+    --color_primario_suave: #5ccda7;
+    --color_primario_oscuro: #026842;
+    --color_blanco: #fff;
+    --color_dorado: #E8E068;  
+    --color_negro: #000;
+    --padding_left_right: 2rem;
+    --ancho_maximo: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-width: 450px;
+     
+    
+}
+
+header {
+    min-width: 450px;
+}
+
+.cabecera {
+    position:sticky;
+    top: 0;
+    background-color: var(--color_primario);
+    padding: 0 2rem;
+    z-index: 1000;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    max-width: var(--ancho_maximo);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 70px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+}
+
+.logo a {
+    font-size: 1.5rem; 
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color_blanco);
+    font-size: 1rem;
+}
+
+a:hover {
+    color: var(--color_dorado);
+}
+
+.navbar .links_nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color: var(--color_blanco);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.header .navbar {
+    
+    gap: 10px;
+}
+
+.navbar .btn{
+    padding: 12px 25px;
+    
+}
+
+.action_btn {
+    background-color: var(--color_primario_oscuro);
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.action_btn:hover {
+    transform: scale(1.08);
+}
+
+/* Dropdown menu */
+.dropdown_menu {
+    position: absolute;
+    right: var(--padding_left_right);
+    top: 80px;
+    width: 300px;
+    background-color: #224C38;
+    overflow: hidden;
+    border-radius: 10px;
+    max-height: 0;
+    transition: max-height 0.35s ease-in-out;
+}
+
+.dropdown_menu.open {
+    max-height: 400px; /* Ajusta esta altura según tu contenido */
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu a:hover {
+    color: var(--color_dorado);
+}
+
+.dropdown_menu .action_btn {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 1043.20px) {
+    .navbar .links_nav, .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 0;
+        right: 0;
+        width: unset;
+        margin: 0 var(--padding_left_right);
+    }
+}
+/*-----FIN HEADER-----*/
+
+/*--------MAIN--------*/
+.fondo1 {
+    background-image:url("../img/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero .container {
+    max-width: 700px;
+    margin: 10% auto 6% auto;
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; border-radius: 2px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(10px); /* compatiblidad con el navegador safari*/ 
+}
+
+
+.hero h2{
+    font-size: 2.5rem;
+    font-family: 'Philosopher', sans-serif;
+    margin-bottom: 1rem;
+    color:white; 
+    animation: fadeInDown 1s ease-out;
+    /*-webkit-text-stroke: 1px white;*/
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    margin: 1.5rem;
+    color: #ffffff;
+    animation: fadeInUp 1s ease-out;
+    font-weight: bolder;
+}
+
+.hero .button {
+    display: inline-block;
+    padding: 15px 20px;
+    background: #f4b41a;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero .button:hover {
+    background: #e39c08;
+}
+
+/* BUSQUEDA */
+.busqueda {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 2.5rem 0;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    background: rgba(0, 114, 33, 0.5);
+    text-align: center;
+    align-items: center;
+    backdrop-filter: blur(3px); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+  
+.busqueda label {
+    margin: 0 auto;
+    color: var(--color_blanco);
+    margin-left: 15px;
+}
+  
+.busqueda input, .busqueda select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+  
+ .busqueda button[type="submit"] {
+    background-color: #4CAF50;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.busqueda button[type="submit"]:hover {
+    background-color: #000;
+    color: #59DE98;
+}
+/* Fin Buscar */
+
+/* Fin banner inicio */
+.fondocolor{
+    background-color:#18492C;
+    height: 100%;
+    padding: 1px;
+}
+
+.section {
+    padding: 1.5rem 0;
+    margin: 1.5rem;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #f4b41a;
+}
+
+.section p {
+    font-size: 1.1rem;
+    margin: 0 3rem;
+    color: #666;
+}
+
+.rooms {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.room {
+    flex: 1;
+    margin: 0 1rem;
+    width: 80%;
+    transition: transform 0.3s ease;
+}
+
+.room img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.room h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.room p {
+    margin-top: 0.3rem;
+    color: #666;
+}
+
+.room:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    
+}
+
+footer p{
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #224C38;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.contact-info {
+    margin: 0 20px;
+    color: white;
+    flex: 1;
+}
+
+.contact-form {
+    margin: 0 20px;
+    color: white;
+    flex-grow: 1;
+    
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 150px;
+    width: auto;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #00A04E;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #28A428;
+}
+
+@media (max-width: 600px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero .container {
+        max-width: 90%;
+    }
+    
+    .contact-info {
+        margin-bottom: 40px;
+        
+    }
+
+    .section p {
+        font-size: 1.1rem;
+        color: #666;
+    }
+
+    .contact-form {
+        width: 96%;
+    }
+    .rooms {
+        flex-direction: column;
+        
+    }
+
+    .room {
+        margin: 1.2rem 0;
+        width: 90%;
+    }
+}
+
+
+
