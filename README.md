@@ -2,7 +2,7 @@
 Sistema para reserva de hotel desarrollado con PHP y MySQL, totalmente online
 Create reservas y pagos, Create clientes y usuarios, Read reservas y usuarios, Delete reservas
 
-# Home - Iniciar Sesión
+# Home - Index
 
 ![Home](https://github.com/LOLcodigopau11/WebHotelPHP)
 
@@ -13,7 +13,7 @@ pass: juli123
 
 Software Necesario. XAMPP, MySQL, Apache NetBeans o VS
 
-## 🚀 Tecnología
+## Tecnologías
 - PHP
 - MYSQL
 - CSS
@@ -21,13 +21,14 @@ Software Necesario. XAMPP, MySQL, Apache NetBeans o VS
 - HTML
 - SQL
 
-## ✋🏻 Requisitos previos
+## Requisitos previos
 
 - [XAMPP](https://www.apachefriends.org/es/index.html)
 - [Apache NetBeans](https://netbeans.apache.org/front/main/download/) o
 - [VS Code](https://code.visualstudio.com/)
 - [MySQL](https://dev.mysql.com/downloads/) 
 
+## Instalación en windows (servidor local)
 1. Clonar o descargar el repositorio;
 2. Crear BD e importar;
 3. Configurar los datos de conexión «db.php»;
