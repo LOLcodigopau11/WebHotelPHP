@@ -25,8 +25,6 @@ Usuarios de ejemplo:
   user: julix
   pass: juli123
 
-Software Necesario. XAMPP, MySQL, Apache NetBeans o VS
-
 ## Tecnologías
 - PHP
 - MYSQL
