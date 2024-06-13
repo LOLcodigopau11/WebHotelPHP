@@ -45,7 +45,7 @@ Usuarios de ejemplo:
 2. Crear BD e importar;
 3. Configurar los datos de conexión «Conexion.php»;
 4. Datos de acceso por defecto al panel de administración: 
-usuario: admin y contraseña: admin;
+usuario: admin y contraseña: admin
 
 Gracias!
 [Perfil](https://github.com/LOLcodigopau11)
