@@ -43,7 +43,7 @@ Usuarios de ejemplo:
 ## Instalación en windows (servidor local)
 1. Clonar o descargar el repositorio;
 2. Crear BD e importar;
-3. Configurar los datos de conexión «db.php»;
+3. Configurar los datos de conexión «Conexion.php»;
 4. Datos de acceso por defecto al panel de administración: 
 usuario: admin y contraseña: admin;
 
