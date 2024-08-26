@@ -20,7 +20,7 @@ Create reservas y pagos, Create clientes y usuarios, Read reservas y usuarios, D
 # Panel de Clientes
 ![P-Cliente](https://github.com/LOLcodigopau11/WebHotelPHP/blob/main/img/panelClienteIMG.png)
 
-# Pagina web funcional hasta 2025: https://greenghost-hotel.000webhostapp.com/
+# Usuarios
 Usuarios de ejemplo: 
   user: julix
   pass: juli123
