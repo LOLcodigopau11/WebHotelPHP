@@ -1,6 +1,6 @@
 # SISTEMA DE RESERVA DE HOTEL Y REGISTRO DE CLIENTES.
 Sistema para reserva de hotel desarrollado con PHP y MySQL, totalmente online
-Create reservas y pagos, Create clientes y usuarios, Read reservas y usuarios, Delete reservas
+Create: reservas y pagos, Create: clientes y usuarios, Read: reservas y usuarios, Delete: reservas
 
 # Home - Index
 ![Index](https://github.com/LOLcodigopau11/WebHotelPHP/blob/main/img/indexIMG.png)
